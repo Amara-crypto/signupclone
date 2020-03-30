@@ -28,58 +28,7 @@ this.handlechangecompany=this.handlechangecompany.bind(this)
 
 <form>
 <h3>ACCOUNT</h3>
- <div>
-     <label>Email</label>
-     <input 
-     type="email"
-     name="email"
-     value={this.state.email}
-     onChange={this.handlechangeemail}
-     />
- </div>
- <div>
-     <label>Password</label>
-     <input 
-     type="password"
-     name="password"
-     value={this.state.password}
-     onChange={this.hanldechangepassword}
-     />
- </div>
- <div>
-     <label>Retype Password</label>
-     <input
-     type="password"
-     name="password"
-     value={this.state.retypePassword}
-     onChange={this.handlechangepassword1}
-     value={his.state.password}
-     />
- </div>
- <div>
-     <label>Country</label>
-     <input type="text"
-     name="country"
-     value={this.state.country}
-     onChange={this.handlechangecountry}
-     />
-     
- </div>
- <div>
-     <label>First Name</label>
-     <input type="text"
-      name="firstname"
-      onChange={this.handlechangefname}
-     />
- </div>
- <div>
-     <label>Last  Name</label>
-     <input type="text"
-      name="lastname"
-      value={this.state.lastName}
-      onChange={this.handlechangelname}
-     />
- </div>
+ 
  
  <div>
      <label>Company</label>
