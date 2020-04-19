@@ -1,15 +1,19 @@
 */
-.wrapper{
+.root_wrapper{
   align-items: center;
   background-color: #258ea6;
+  margin-top:10%;
+  margin-bottom:10%;
 }
 .form-wrapper{
-  width: 400px;
   position: absolute;
-  left:35%;
-  display: flex;
+  margin-top:10%;
+  margin-bottom:10%;
+  width: 50%;
+  margin-left:10%;
+  margin-right:10%;
   flex-direction: column;
-  padding: 20px 40px;
+  padding: 20px 20px;
   border-radius: 10px;
   box-shadow: 0px 10px 50px #555;
   background-color: #ffffff;
@@ -20,6 +24,12 @@ form{
   width: 100%;
   display:flex;
   flex-wrap: wrap;
+}
+
+.superRoot{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 h1 {
   text-align: center;
@@ -72,6 +82,7 @@ margin-bottom: 15px;
 
 .name{
   width: 100%;
+  flex-direction: column;
 }
 .username,
 .password,

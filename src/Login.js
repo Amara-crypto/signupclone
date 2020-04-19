@@ -1,11 +1,11 @@
 import React from 'react';
-//import Nav from '/Nav';
 import './App.css'
+import userDtabase from './userDatabase';
 class Login extends React.Component{
   constructor(props){
   super(props)
    this.state = {
-     username:'',
+     username:userDtabase['users'][0].email,
      password: '',
      
     }
@@ -29,8 +29,11 @@ class Login extends React.Component{
   }
   
   if (this.checkfields()){
+    this.props.history.push('/Dashboard');
     alert('Welcome')
   }
+   
+
 }
 CreateAcc(){this.props.history.push('/Account');
 }
@@ -50,7 +53,7 @@ handleChangePassword(event){
     render(){
         return(
          
-          <div className="wrapper" align="center">
+          <div className="root_wrapper" >
             <div className="form-wrapper">
           <form /*onSubmit={this.handleSubmit}*/ >
             <h1>ACCOUNT SIGN IN</h1>
